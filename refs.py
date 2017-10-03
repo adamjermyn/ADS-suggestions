@@ -1,12 +1,10 @@
 import sys
-from os.path import expanduser
-home = expanduser("~")
 
 fname = sys.argv[1]
 num = int(sys.argv[2])
 
 import ads
-fi = open(home + '/adstoken','r')
+fi = open('../adstoken','r')
 line = fi.readline().strip()
 ads.config.token = line
 fi.close()
